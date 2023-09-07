@@ -52,8 +52,9 @@
   /* العرض المتوسط (sm) */
 @media (max-width: 767px) {
     .search-container {
-      width: 100%;
-      padding: 10px; /* زيادة المساحة الداخلية للحقل النصي */
+      width: 70%;
+      height: 60px;
+      padding: 20px 15px; 
     }
   
     .search-image {
@@ -185,6 +186,7 @@ margin-left: 40px;
   @media (max-width: 768px) {
    .all-buutton{
     max-width: 100%;
+    display: none;
     
    }
    .all-buutton a{
@@ -262,7 +264,7 @@ text-align: center;
         flex-direction: column;
     }
     .new-sec{
-        width: 100%;
+        max-width: 100%;
         background-color: #fff;
     }
 }
@@ -367,21 +369,19 @@ background: #FF543E;
   border: none;
 }
 
-@media (max-width: 576px) {
-  .drop-down {
-      display: none;
-      
-  }
+
   #toggle-menu {
     display: block;
 }
 
+
+@media (max-width: 767px) {
+  .drop-down.active {
+      display: block;
+  }
 }
 
-.drop-down.active {
-  display: block;
-  animation: slideDown 0.5s ease-in-out;
-}
+
 @keyframes slideDown {
   0% {
       opacity: 0;
@@ -459,3 +459,104 @@ padding-top: 25px;
   }
 }
  
+
+.nav-sec .navbar-inverse{
+  background-color: #0762CD;
+  border-radius: 25px;
+  padding: 20px 15px;
+  width: 80%;
+  margin: 20px auto;
+}
+.input-ser{
+  margin-top:10px ;
+  width: 100%;
+  background-color: #0762CD;
+  border: none;
+}
+.navbar-brand img{
+  /* display: none; */
+  top: 25px;
+  position: absolute;
+}
+.input-ser::placeholder {
+  color: #fff; /* لون النص */
+  font-size: 25px; /* حجم الخط */
+  text-align: center; /* تنزاح لليمين */
+  font-family:  title sec;
+}
+
+
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.dropdown-menu>li>a {
+  font-size: 20px !important;
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #000;
+  white-space: nowrap;
+  font-family:title sec ;
+  font-weight: 300;
+}
+@media (max-width: 767px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    font-size: 20px !important;
+    font-family:title sec ;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+
+.input-ser input{
+  margin-bottom: 30px;
+  margin-top: 13px;
+  width: 100%;
+  padding-top:  10px;
+
+
+}
+.input-ser{
+  /* display: none; */
+}
+.input-ser::placeholder {
+  color: #fff; /* لون النص */
+  font-size: 25px; /* حجم الخط */
+  text-align: center; /* تنزاح لليمين */
+  font-family:  title sec;
+ 
+  
+  
+}
+.nav-sec .navbar-inverse{
+  background-color: #0762CD;
+  border-radius: 25px;
+  padding: 20px 15px;
+  width: 100%;
+padding: 20px 20px;
+}
+.navbar-brand img{
+  /* display: none; */
+  top: 25px;
+  position: absolute;
+  display: none;
+}
+
+
+}
+
+
+
+
+@media (min-width: 768px) {
+  .link-one{
+    display: none !important;
+  }
+}
+
